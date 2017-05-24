@@ -15,6 +15,7 @@
 		A79AD9B71ED5542700307BBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79AD9B51ED5542700307BBC /* LaunchScreen.storyboard */; };
 		A79AD9C21ED5542700307BBC /* TSImagePodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A79AD9C11ED5542700307BBC /* TSImagePodsTests.m */; };
 		A79AD9CD1ED5542700307BBC /* TSImagePodsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A79AD9CC1ED5542700307BBC /* TSImagePodsUITests.m */; };
+		A79AD9E01ED554BA00307BBC /* TTScaleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A79AD9DF1ED554BA00307BBC /* TTScaleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A79AD9C81ED5542700307BBC /* TSImagePodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSImagePodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79AD9CC1ED5542700307BBC /* TSImagePodsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImagePodsUITests.m; sourceTree = "<group>"; };
 		A79AD9CE1ED5542700307BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79AD9DE1ED554BA00307BBC /* TTScaleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScaleButton.h; sourceTree = "<group>"; };
+		A79AD9DF1ED554BA00307BBC /* TTScaleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTScaleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		A79AD9A61ED5542700307BBC /* TSImagePods */ = {
 			isa = PBXGroup;
 			children = (
+				A79AD9DD1ED554BA00307BBC /* Classes */,
 				A79AD9AA1ED5542700307BBC /* AppDelegate.h */,
 				A79AD9AB1ED5542700307BBC /* AppDelegate.m */,
 				A79AD9AD1ED5542700307BBC /* ViewController.h */,
@@ -138,6 +142,15 @@
 				A79AD9CE1ED5542700307BBC /* Info.plist */,
 			);
 			path = TSImagePodsUITests;
+			sourceTree = "<group>";
+		};
+		A79AD9DD1ED554BA00307BBC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A79AD9DE1ED554BA00307BBC /* TTScaleButton.h */,
+				A79AD9DF1ED554BA00307BBC /* TTScaleButton.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 			files = (
 				A79AD9AF1ED5542700307BBC /* ViewController.m in Sources */,
 				A79AD9AC1ED5542700307BBC /* AppDelegate.m in Sources */,
+				A79AD9E01ED554BA00307BBC /* TTScaleButton.m in Sources */,
 				A79AD9A91ED5542700307BBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = TSImagePods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vqw.tts.TSImagePods;
@@ -435,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = TSImagePods/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vqw.tts.TSImagePods;
